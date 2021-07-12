@@ -1,0 +1,16 @@
+{
+  "extends": "eslint-config-egg",
+  "globals": {
+    "use": true,
+    "Controller": true,
+    "C": true,
+    "Ramda": true,
+    "R": true,
+    "check": true,
+    "Service": true,
+    "S": true,
+    "DEV": true,
+    "info": true,
+    "debug": true
+  }
+}
