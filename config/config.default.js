@@ -26,7 +26,7 @@ module.exports = appInfo => {
       host: 'localhost',
       port: '3306',
       username: 'root',
-      password: '123789Qweop[',
+      password: '123456',
       timezone: '+08:00',
       define: {
         // 默认创建表有 createAt, updateAt
@@ -64,7 +64,7 @@ module.exports = appInfo => {
         //   /\/admin/,
         //   /.*\.(js|css|map|jpg|png|ico)/,
         // ];
-        const paths = [ '/api/v1/signin', '/api/v1/signup' ];
+        const paths = [ '/api/v1/signin', '/api/v1/signup', '/passport/github', '/passport/github/callback' ];
         if (DEV) {
           const tip = `${chalk.yellow('[JWT]')} --> ${
             R.contains(ctx.path, paths)
@@ -79,6 +79,10 @@ module.exports = appInfo => {
     passportLocal: {
       usernameField: 'email',
       passwordField: 'password',
+    },
+    passportGithub: {
+      key: 'f2dfc76ae63f51b3e459',
+      secret: '9ead9b87d2588451d800871a500be81dfc6855f2',
     },
   });
 

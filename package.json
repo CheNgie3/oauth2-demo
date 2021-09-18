@@ -37,7 +37,7 @@
     "m:seedup": "sequelize db:seed:all",
     "start": "egg-scripts start --daemon --title=egg-server-oauth2",
     "stop": "egg-scripts stop --title=egg-server-oauth2",
-    "dev": "DEBUG=app* egg-bin dev",
+    "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",
     "test-local": "egg-bin test",

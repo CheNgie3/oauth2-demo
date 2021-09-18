@@ -9,6 +9,8 @@ module.exports = app => {
     'User',
     {
       id: { type: INTEGER, primaryKey: true, autoIncrement: true },
+      provider: STRING,
+      uid: STRING,
       username: STRING(40),
       avatar: STRING,
       password: STRING,

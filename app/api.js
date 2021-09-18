@@ -5,5 +5,6 @@ module.exports = ctl => ({
     '/signup': ctl.user.signUp, // 注册
     '/signin': ctl.passport.local, // 登录
   },
-  get: {},
+  get: {
+  },
 });
